@@ -1,0 +1,116 @@
+.footer {
+  padding: 3em 0;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+@media (max-width: 930px) {
+  .footer {
+    padding: 4em;
+  }
+}
+@media (max-width: 450px) {
+  .footer {
+    padding: 3em 2em;
+  }
+}
+.footer__row {
+  justify-content: space-between;
+}
+@media (max-width: 930px) {
+  .footer__row {
+    justify-content: center;
+  }
+}
+.footer__row:not(:last-child) {
+  margin-bottom: 1.6em;
+}
+.footer__icon img {
+  display: block;
+}
+@media (max-width: 930px) {
+  .footer__icon img {
+    width: 12em;
+  }
+}
+.footer__socialmedia {
+  align-self: center;
+}
+@media (max-width: 930px) {
+  .footer__socialmedia {
+    display: none;
+  }
+}
+.footer__socialmedia > * {
+  position: relative;
+  margin-left: 1em;
+}
+.footer__socialmedia > *:hover::after {
+  position: absolute;
+  bottom: -0.7em;
+  left: 0;
+  width: 1.5em;
+  content: "";
+  border: 1px solid var(--color-white);
+}
+.footer__socialmedia a {
+  text-decoration: none;
+}
+@media (max-width: 930px) {
+  .footer__navigation {
+    width: 100%;
+    margin: 1.5em 0 0.5em 0;
+  }
+}
+@media (max-width: 930px) {
+  .footer__navigation .navigation-links__item {
+    margin-bottom: 1em;
+    font-size: 22px;
+  }
+}
+.footer__text p {
+  margin: 0;
+}
+@media (max-width: 930px) {
+  .footer__text {
+    display: none;
+  }
+}
+.footer__socialmedia-mobile {
+  display: none;
+}
+@media (max-width: 930px) {
+  .footer__socialmedia-mobile {
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 930px) {
+  .footer__socialmedia-mobile a {
+    margin-right: 1em;
+    text-decoration: none;
+  }
+}
+@media (max-width: 930px) {
+  .footer__socialmedia-mobile a img {
+    width: 2em;
+  }
+}
+.footer__text-mobile {
+  display: none;
+}
+@media (max-width: 930px) {
+  .footer__text-mobile {
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .footer__text-mobile p {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 450px) {
+  .footer .space-wrapper {
+    padding: 0;
+  }
+}

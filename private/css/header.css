@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+}
+.header__image img {
+  width: 100%;
+  display: block;
+  filter: brightness(0.6);
+}
+.header__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

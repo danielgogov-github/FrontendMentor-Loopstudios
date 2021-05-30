@@ -1,0 +1,92 @@
+.navigation {
+    padding-top: 4em;
+    color: var(--color-white);
+
+    &__row {
+        & > * {
+            flex-basis: 100%;
+        }
+    }  
+    &__icon {
+        img {
+            display: block;
+
+            @media (max-width: 930px) {
+                width: 12.0em;
+            }
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;      
+    }
+    &__title {
+        width: 50%;
+        margin: 2.1em 0;
+        padding: 0.6em;
+        font-size: 60px;
+        font-family: "JosefinSans-Light";
+        text-transform: uppercase;             
+        border: 1px solid var(--color-white);
+
+        @media (max-width: 1155px) {
+            font-size: 50px;
+        }   
+        @media (max-width: 930px) {
+            width: auto;
+            font-size: 45px;
+        }                
+        @media (max-width: 450px) {
+            margin-top: 5.0em;
+            font-size: 36px;
+        }
+    }
+    &__overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;    
+        right: 0;
+        background-color: var(--color-black);
+        overflow-x: hidden;
+        transition: width 0.7s ease;
+
+        .navigation__row {
+            margin-top: 4.0em;
+        }
+        &-logo {
+            align-self: center;
+            img {
+                width: 12.0em;
+                display: block;
+            }
+        }
+        &-close {
+            text-align: right;
+            img {
+                width: 2.0em;
+            }
+        }   
+        &-elements {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-family: "JosefinSans-Light";
+
+            a {
+                display: block;
+                margin-bottom: 0.9em;
+                font-size: 40px;
+                color: var(--color-white);
+                text-decoration: none;
+                text-transform: uppercase;
+
+                @media (max-width: 450px) {
+                    font-size: 35px;
+                }                 
+            }
+        }   
+    }                  
+}

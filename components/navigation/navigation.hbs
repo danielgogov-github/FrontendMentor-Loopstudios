@@ -1,0 +1,36 @@
+<nav class="navigation">
+    <div class="navigation__row row">
+        <div class="navigation__icon">
+            <a>
+                <img src="../private/icons/icon-logo.svg" alt="">
+            </a>
+        </div>
+        <div class="navigation__items">
+            {{> navigation-links }}
+        </div>
+    </div>
+    <div class="navigation__title">
+        {{ navigationTitle }}
+    </div>
+    <div class="navigation__overlay">
+        <div class="space-wrapper">
+            <div class="navigation__row row">
+                <div class="navigation__overlay-logo">
+                    <img src="../private/icons/icon-logo.svg" alt="">
+                </div>
+                <div class="navigation__overlay-close">
+                    <a href="" data-overlay-close="">
+                        <img src="../private/icons/navigation-links/icon-close.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="navigation__overlay-elements">
+                <a href="">About</a>
+                <a href="">Careers</a>
+                <a href="">Events</a>                
+                <a href="">Products</a> 
+                <a href="">Support</a> 
+            </div>
+        </div>
+    </div>       
+</nav>

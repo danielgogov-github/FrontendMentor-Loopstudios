@@ -1,0 +1,36 @@
+.presentation {
+  position: relative;
+}
+.presentation__image img {
+  display: block;
+}
+@media (max-width: 930px) {
+  .presentation__image img {
+    width: 100%;
+  }
+}
+.presentation__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  padding: 6em 0 0 6em;
+  background-color: var(--color-white);
+}
+@media (max-width: 930px) {
+  .presentation__text {
+    position: static;
+    width: auto;
+    padding: 5em 0 0 0;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .presentation__text {
+    padding: 3em 0 0 0;
+  }
+}
+.presentation__text p {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}

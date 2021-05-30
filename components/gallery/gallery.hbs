@@ -1,0 +1,59 @@
+<div class="gallery">
+    <div class="gallery__row row">
+        <div class="gallery__title text">
+            <h2>{{ galleryTitle }}</h2>
+        </div>
+        <div class="gallery__button">
+            {{> button 
+                buttonTitle = "See all"
+            }}
+        </div>
+    </div>
+    <div class="gallery__items">
+        {{> gallery-item 
+            gallery-itemImage = "../private/images/gallery-item/image-deep-earth.jpg"
+            gallery-itemImageMobile = "../private/images/gallery-item/image-deep-earth-mobile.jpg"
+            gallery-itemTitle = "Deep earth"
+        }}
+        {{> gallery-item 
+            gallery-itemImage = "../private/images/gallery-item/image-night-arcade.jpg"
+            gallery-itemImageMobile = "../private/images/gallery-item/image-night-arcade-mobile.jpg"
+            gallery-itemTitle = "Night arcade"
+        }}
+        {{> gallery-item 
+            gallery-itemImage = "../private/images/gallery-item/image-soccer-team.jpg"
+            gallery-itemImageMobile = "../private/images/gallery-item/image-soccer-team-mobile.jpg"
+            gallery-itemTitle = "Soccer team VR"
+        }}
+        {{> gallery-item 
+            gallery-itemImage = "../private/images/gallery-item/image-grid.jpg"
+            gallery-itemImageMobile = "../private/images/gallery-item/image-grid-mobile.jpg"
+            gallery-itemTitle = "The grid"
+        }}
+        {{> gallery-item 
+            gallery-itemImage = "../private/images/gallery-item/image-from-above.jpg"
+            gallery-itemImageMobile = "../private/images/gallery-item/image-from-above-mobile.jpg"
+            gallery-itemTitle = "From up above VR"
+        }}
+        {{> gallery-item 
+            gallery-itemImage = "../private/images/gallery-item/image-pocket-borealis.jpg"
+            gallery-itemImageMobile = "../private/images/gallery-item/image-pocket-borealis-mobile.jpg"
+            gallery-itemTitle = "Pocket borealis"
+        }}
+        {{> gallery-item 
+            gallery-itemImage = "../private/images/gallery-item/image-curiosity.jpg"
+            gallery-itemImageMobile = "../private/images/gallery-item/image-curiosity-mobile.jpg"
+            gallery-itemTitle = "The curiosity"
+        }}
+        {{> gallery-item 
+            gallery-itemImage = "../private/images/gallery-item/image-fisheye.jpg"
+            gallery-itemImageMobile = "../private/images/gallery-item/image-fisheye-mobile.jpg"
+            gallery-itemTitle = "Make it fisheye"
+        }}
+    </div>
+    <div class="gallery__button-mobile">
+        {{> button 
+            buttonTitle = "See all"
+        }}
+    </div>    
+</div>

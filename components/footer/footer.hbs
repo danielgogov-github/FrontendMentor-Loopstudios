@@ -1,0 +1,32 @@
+<footer class="footer">
+    <div class="space-wrapper">
+        <div class="footer__row row">
+            <div class="footer__icon">
+                <a href="">
+                    <img src="{{ footerIcon }}" alt="">
+                </a>
+            </div>
+            <div class="footer__socialmedia">
+                {{> socialmedia }}
+            </div>
+        </div>
+        <div class="footer__row row">
+            <div class="footer__navigation">
+                {{> navigation-links }}
+            </div>
+            <div class="footer__text text">
+                <p>
+                    {{ footerText }}
+                </p>
+            </div>
+        </div>
+        <div class="footer__socialmedia-mobile">
+            {{> socialmedia }}
+        </div>  
+        <div class="footer__text-mobile text">
+            <p>
+                {{ footerText }}
+            </p>
+        </div>              
+    </div>
+</footer>

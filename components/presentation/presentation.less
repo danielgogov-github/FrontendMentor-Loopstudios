@@ -1,0 +1,35 @@
+.presentation {
+    position: relative;
+    
+    &__image {
+        img {
+            display: block;
+
+            @media (max-width: 930px) {
+                width: 100%;
+            }
+        }
+    }
+    &__text {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 40%;
+        padding: 6em 0 0 6em;
+        background-color: var(--color-white);
+        
+        @media (max-width: 930px) {
+            position: static;
+            width: auto;
+            padding: 5em 0 0 0;
+            text-align: center;
+        }        
+        @media (max-width: 450px) {
+            padding: 3.0em 0 0 0;
+        }        
+        p {
+            margin-top: 1.5em;
+            margin-bottom: 0;
+        }
+    }
+}

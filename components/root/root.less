@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Alata-Regular';
+    src: url('../private/fonts/Alata-Regular.ttf');
+}
+@font-face {
+    font-family: 'JosefinSans-Light';
+    src: url('../private/fonts/JosefinSans-Light.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: "Alata-Regular";
+    font-size: 15px;
+}
+.page-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.section {
+    margin: 10em 0;
+
+    @media (max-width: 450px) {
+        margin: 5.0em 0;
+    }
+}
+.space-wrapper {
+    padding: 0 10em;
+
+    @media (max-width: 1155px) {
+        padding: 0 5em;
+    }    
+    @media (max-width: 980px) {
+        padding: 0 3em;
+    }    
+    @media (max-width: 450px) {
+        padding: 0 2em;
+    }    
+}
+.row {
+    display: flex;
+}
+
